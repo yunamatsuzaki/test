@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/* リセットの記述 */
+body,h1,h2,h3,p,ul,dl,dd,figure{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+/* 全体に対する基本指定 */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial,"游ゴシック","Yu Gothic",YuGothic,"メイリオ",Meiryo,sans-serif;
+    font-weight: 500;
+    color:#333;
+    font-size:12px;
+    background-color: #e9872e;
+}
+
+/* コンテンツ幅の制御 */
+.inner{
+    width: 950px;
+    margin: 0 auto;
+}
+
+/* 横並び用の記述(横並びにしたいアイテムの親要素にこのクラス名を付けていく)*/
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ヘッダー部分 */
+header{
+    padding: 15px 0;
+}
+
+header ul{
+    margin-top: 20px;
+}
+
+header ul li{
+    margin-left: 15px;
+}
+
+header ul li::before{
+    content:"";
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background-image:url(../images/icon_dog.gif);
+    margin-right: 5px;
+    vertical-align: -4px;
+}
+
+header ul li a{
+    color:#fceab7;
+}
+
+/* ナビゲーション */
+nav{
+    background-image: url(../images/nav_back.jpg);
+    margin-bottom: 15px;
+}
+
+/* メインビジュアル */
+.visual{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* メインエリア（左側） */
+main{
+    width: 675px;
+    flex-wrap: wrap;
+}
+
+main h2{
+    margin-bottom: 10px;
+}
+
+main .box{
+    width: 330px;
+    background-color: #f9ebb6;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+main .box .price{
+    margin-bottom: 12px;
+}
+
+main .box .photo{
+    float: left;
+    margin-right: 10px;
+}
+
+main .box .btn{
+    text-align: right;
+    margin-top: 10px;
+    clear: both;
+}
+
+main .info{
+    background-color: #f9ebb6;
+    width: 100%;
+    padding: 12px;
+}
+
+main .info dl{
+    border-top: 1px dashed #333;
+    line-height: 1.8;
+    padding-top: 10px;
+}
+
+main .info dt{
+    width: 120px;
+    float: left;
+    clear: both;
+}
+
+main .info .btn{
+    text-align: right;
+}
+
+/* アサイドエリア（右側） */
+aside{
+    width: 260px;
+    height: 360px;
+    background-image: url("../images/search_back.jpg");
+    padding: 15px;
+    color: #fff;
+}
+
+aside h3{
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+aside dl dt{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+aside dl dd{
+    margin-bottom: 10px;
+}
+
+aside label{
+    margin-right: 1.5em;
+}
+
+aside .line{
+    border-top:1px dashed #fff;
+    padding-top: 10px;
+}
+
+/* フッター */
+footer{
+    background-color: #552200;
+    color: #fff;
+    margin-top: 15px;
+    line-height: 50px;
+}
+
+footer ul li{
+    margin-right: 15px;
+}
+
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p{
+    margin-right: 50px;
+}
+
+footer small{
+    font-size: 12px;
+}
